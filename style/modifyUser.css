@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "montserrat";
+    src: url("../fonts/Montserrat.ttf");
+}
+body {
+    height: 100vh;
+}
+
+
+.box {
+    width: 70%;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.2);
+    padding: 35px;
+    background-clip: padding-box;
+    text-align: center;
+    padding-top: 0;
+}
+
+.button {
+    font-size: 1em;
+    padding: 10px;
+    border: 2px solid black;
+    background: #ffb600;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease-out;
+    color: black;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 65%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+
+}
+.popup h3{
+    font-size: 36px;
+}
+.popup .closePop {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+.fa-times.red, .fa-check.green {
+    border: none;
+    display: none;
+}
+.fa-check.green {
+    color: green;
+}
+.fa-times.red {
+    color: red;
+}
+
+
+@media screen and (min-width: 700px){
+    .box{
+        width: 50%;
+    }
+    .popup{
+        width: 30%;
+    }
+    .content form{
+        display: flex;
+        flex-direction: column;
+    }
+    .popup h2 {
+        font-size: 30px;
+
+    }
+    i{
+        width: 90%;
+
+    }
+    input[type="text"], input[type="password"], #email {
+        font-size: 14px;
+    }
+    label[for="submit"]{
+        font-family: elephans;
+        font-size: 24px;
+    }
+    i.fa-lock-open{
+        width: auto;
+    }
+}

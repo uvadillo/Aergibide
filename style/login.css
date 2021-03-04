@@ -1,0 +1,253 @@
+@font-face {
+    font-family: "elephans";
+    src: url("../fonts/Elephans.ttf");
+}
+@font-face {
+    font-family: "montserrat";
+    src: url("../fonts/Montserrat.ttf");
+}
+*{
+    margin: 0 auto;
+}
+#imgPcs{
+    width: 30%;
+}
+body{
+    background: url("../media/backgroundbn.png");
+    background-size: cover;
+    height:100vh;
+}
+
+#signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap column;
+    background:rgba(0,0,0,0.5);
+    height: 100vh;
+}
+#login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap column;
+    background:rgba(0,0,0,0.5);
+    height: 100vh;
+}
+.imgMovil{
+    width: 40vw;
+}
+#color{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#color #nombreEmpresa{
+    font-size: 80px;
+    color: #ffb600;
+    font-family: elephans;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap column;
+    width: 60vw;
+    height: 35vh;
+    border-radius: 5px;
+    opacity: 1;
+}
+input[type="text"], input[type="password"],input[type="email"]{
+    background: none;
+    border: none;
+    color: #ffb600;
+    outline:none;
+}
+i{
+    border-bottom: 1px solid #ffb600;
+    margin-bottom: 4vh;
+    padding-bottom: 1vh;
+    width: 60vw;
+    color: #ffb600;
+}
+::placeholder{
+    color: #ffb600;
+    font-weight: bold;
+}
+input[type="submit"]{
+    width: 50vw;
+    padding: 5px;
+    border-radius: 10px;
+    background: black;
+    outline:none;
+    margin-bottom: 10px;
+    border: none;
+    color: #ffb600;
+    border: 1px solid #ffb600;
+    font-family: elephans;
+}
+.newaccount{
+    bottom:0;
+    position: absolute;
+    margin-bottom: 10px;
+    color: #ffb600;
+    font-family: elephans;
+}
+.btnSignmbl{
+    width: 50vw;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #ffb600;
+    outline:none;
+    margin-top: 10px;
+    border:0.5px solid #ffb600;
+    font-family: elephans;
+
+}
+a{
+    text-decoration:none;
+    color:#ffb600;
+    font-family: elephans;
+}
+#signup form{
+    height: 60vh;
+    width: 100vw;
+}
+input[type="file"]{
+    display: none;
+}
+#signup{
+    display: none;
+}
+#fotoperfil, #color, h1, .btncambiar{
+    display: none;
+}
+#errorLog{
+    color: #ffb600;
+}
+
+@media screen and (min-width: 768px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100vw;
+    }
+    #color{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60vw;
+        height: 100vh;
+        background:#000000a3;
+    }
+    #login,#signup{
+        width: 40vw;
+        margin:0;
+        background-color: #ffb600;
+    }
+    .imgMovil{
+        display: none;
+    }
+    #login{
+        height: 100vh;
+    }
+    i{
+        width: 20vw;
+    }
+    form{
+        width: auto;
+        height: auto;
+    }
+    input[type="text"], input[type="password"],input[type="email"]{
+        width:18vw;
+        color: black;
+
+    }
+    input[type="submit"]{
+        width: 20vw;
+        height: 3vw;
+        font-size: 20px;
+    }
+    .btnSignmbl{
+        display: none;
+    }
+    ::placeholder{
+        color: black;
+    }
+    p{
+        font-size: 18px;
+    }
+    i{
+        color: black;
+        border-bottom-color: black;
+    }
+    h1{
+        display: block;
+        align-self: flex-start;
+        margin: 0 0 5vh 0;
+        border-bottom: 15px solid black;
+        color: black;
+        font-size: 50px;
+        font-family: elephans;
+    }
+
+    #signup form{
+        width: 40vh;
+        height: auto;
+    }
+    .btncambiar{
+        display: flex;
+        top:0;
+        right: 0;
+        position: absolute;
+        margin:10px;
+
+
+    }
+    .btnSignin,.btnSignup{
+        display: inline-block;
+        border: none;
+        padding:5px;
+        outline: 0;
+        width: 8vw;
+        font-size: 20px;
+        background-color: black;
+        color: black;
+        font-family: elephans;
+    }
+    .newaccount{
+        color: black;
+        font-family: elephans;
+    }
+    a{
+        font-weight: normal;
+        color: black;
+    }
+    .btnSignin{
+        border-radius: 10px 0 0 10px;
+    }
+    .btnSignup {
+        border-radius: 0 10px 10px 0;
+    }
+    .unactive{
+        border: 1px solid black;
+        /* border-right: 0.5px solid white; */
+        background: transparent;
+    }
+    .active{
+        color:  #ffb600;
+        /* border-left: 0.5px solid white; */
+    }
+    #login{
+        display: none;
+    }
+    #login{
+        display: flex;
+    }
+    #errorLog{
+        color: black;
+    }
+}

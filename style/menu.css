@@ -1,0 +1,289 @@
+@font-face {
+    font-family: "elephans";
+    src: url("../fonts/Elephans.ttf");
+}
+
+input:active,button:active{
+    outline: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+
+}
+/*MOVIL FIRST*/
+/*menu desplegable*/
+#menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    background: #ffb600;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "elephans";
+    position: fixed;
+    top: 0;
+    padding: 15px;
+}
+i{
+    color:black;
+}
+#menuList {
+    position: absolute;
+    z-index: 10;
+    top: 60px;
+    left: -100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    transition: all .3s;
+    text-align: center;
+    background-color: #ffcc00;
+}
+
+#menu #menuList li {
+    display: flex;
+    height: 15%;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 0.5px black;
+}
+
+#menu #menuList li a {
+    font-size: 1.5em;
+    font-weight: 700;
+    color:black;
+}
+#menu #menuList li a:hover{
+    color:white;
+
+}
+
+#check:checked~#menuList {
+    left: 0;
+}
+
+#check:checked~.close {
+    display: inline;
+}
+
+#check:checked~.open {
+    display: none;
+
+}
+i.fa-search{
+    color: white;
+}
+#listabusqueda{
+    display: none;
+}
+.checkbtn {
+    font-size: 30px;
+    display: block;
+    float: left;
+    cursor: pointer;
+    color: white;
+}
+#check {
+    display: none;
+}
+.close{
+    display: none;
+}
+
+
+.buscador{
+    width:50%;
+    border-radius: 6%;
+    display: none;
+    margin-right: 17px;
+}
+
+#logoMvl{
+    width: 12%;
+}
+/*Barra buscador*/
+form.buscador input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-radius: 5px 0 0 5px;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+    margin: 0;
+    outline: none;
+}
+
+
+form.buscador button{
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: black;
+    color: white;
+    font-size: 17px;
+    border-left: none;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 0 5px 5px 0;
+}
+
+form.buscador button:hover {
+    background:#ffcc00 ;
+}
+form.buscador button:hover > i{
+    color:black;
+}
+form.buscador::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+i.fa-search{
+    cursor: pointer;
+    border-bottom: none;
+}
+
+#userFoto{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px black solid;
+}
+#infoUsu{
+    display: flex;
+    align-items: center;
+    padding-right: 17px;
+}
+#infoUsu #nombreApe{
+    margin-left: 5px;
+    display: none;
+}
+#infoUsu #nombreApe{
+    margin-left: 5px;
+    display: none;
+    color: black;
+}
+#pcbutton{
+    display: none;
+}
+i.fa-door-open{
+    display: block;
+}
+#logoAergibide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#logoAergibide #logoMvl{
+    width: 15%;
+}
+#logoAergibide #nombreAergibide{
+    font-size: 44px;
+}
+/*DISEÑO ESCRITORIO*/
+@media (min-width: 768px){
+    #menuList {
+        position: relative;
+        z-index: 0;
+        top: 0px;
+        left: 0%;
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        height: auto;
+        text-align: center;
+        background-color: #ffb600;
+
+    }
+    #menu #menuList li {
+        display: flex;
+        height: 15%;
+        justify-content: space-between;
+        align-items: center;
+        border-right: solid 0.5px black;
+        border-bottom: 0;
+        padding:10px ;
+    }
+    .buscador{
+        width:35%;
+
+    }
+    #listabusqueda{
+        position: absolute;
+        top:85%;
+        background-color: black;
+        background: rgba(34,34,34,0.75);
+        width: 35%;
+        color: white;
+        border-radius: 0% 0% 2% 2%;
+        display: none;
+    }
+
+    .searchlist li {
+        padding: 20px 12px;
+
+
+    }
+    #menu #menuList li.salir{
+        display: none;
+    }
+
+    .checkbtn{
+        display: none;
+    }
+    /*Primer div*/
+    #titulop{
+        display: block;
+        font-size: 65px;
+
+    }
+    .button1 {
+        background-color: #ffb600;
+        border: 2px solid black;
+        margin-left: 2%;
+        border-radius: 6%;
+        font-size: 32px;
+    }
+    .button1 a{
+        color:black;
+        font-weight: bold;
+    }
+
+    #pcbutton{
+        display: block;
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        background: white;
+        padding: 10px;
+    }
+    #pcbutton:hover{
+        color: white;
+        background: black;
+    }
+    .active{
+        color:  #ffb600;
+        /* border-left: 0.5px solid white; */
+    }
+    .unactive{
+        border: 1px solid black;
+        /* border-right: 0.5px solid white; */
+        background: transparent;
+    }
+    #infoUsu #nombreApe{
+        display: block;
+    }
+    i.fa-door-open{
+        display: none;
+    }
+    #logoAergibide #logoMvl{
+        width: 9%;
+    }
+}

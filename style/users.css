@@ -1,0 +1,306 @@
+@font-face {
+    font-family: "elephans";
+    src: url("../fonts/Elephans.ttf");
+}
+@font-face {
+    font-family: "montserrat";
+    src: url("../fonts/Montserrat.ttf");
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#informacionTotal{
+    margin-bottom: 3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width:80vw;
+    font-size: 18px;
+    font-family: 'montserrat';
+
+}
+#imgUser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    margin-right: 20px;
+}
+#tamañoFoto{
+    width: 100%;
+    align-self: flex-start;
+
+}
+#imgUser img{
+    margin-top: 4vh;
+    margin-bottom: 1vh;
+    margin-right: 2vw;
+    width: 110px;
+    border-radius: 50%;
+    height: 110px;
+}
+#imgUser #username{
+    text-transform: uppercase;
+    font-weight: bold;
+    align-self: flex-start;
+    width: 100%;
+    text-align: center;
+
+}
+#principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 45px;
+    margin-bottom: 6vh;
+}
+#infUsu{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+}
+#datosUsu{
+    display: flex;
+    flex-direction: column;
+    height: 5vh;
+    justify-content: space-between;
+}
+#datosUsu p{
+    margin-bottom: 1vh;
+}
+#datosUsu #nombreApellido{
+    text-transform: capitalize;
+    font-weight: 600;
+}
+#datosUsu #ultConex{
+    font-size: 12px;
+    font-family: Serif;
+}
+#preguntasRealizadas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 5vw;
+    margin-bottom: 1vw;
+}
+#bio{
+    display: none;
+}
+#cargaImg{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#preguntas{
+    width: 90vw;
+    padding-bottom: 15px;
+}
+.pregunta{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 70% 30%;
+    max-width: 100%;
+    padding-bottom: 3%;
+    border-top: 1px solid #ffb600;
+    padding-top: 2vh;
+    margin: 0 auto;
+    width:90%;
+}
+.pregunta .interaccion{
+    grid-row: 1/2;
+    margin: 2%;
+}
+.pregunta .titulotags{
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+}
+.pregunta .fechaPregunta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 15px;
+    grid-column: 3/1;
+}
+h2 a{
+    color: black;
+}
+.titulotags p{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+input#file-upload-button{
+    display: none;
+}
+button[name="submit"], input[type="file"]{
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+label[for="imagen"]{
+    font-size: 14px;
+    font-weight: 600;
+    background-color: black;
+    color:#ffb600;
+    border: 1px solid black;
+    display: inline-block;
+    transition: all .5s;
+    cursor: pointer;
+    padding: 10px;
+    text-transform: uppercase;
+    width: 90%;
+    text-align: center;
+    margin-top:20px ;
+    border-radius: 5px;
+}
+label[for="submit"]{
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #ffb600;
+    color:black;
+    border: 1px solid black;
+    display: inline-block;
+    transition: all .5s;
+    cursor: pointer;
+    padding: 10px;
+    text-transform: uppercase;
+    width: 90%;
+    text-align: center;
+    margin-top:20px ;
+    border-radius: 5px;
+}
+
+input[type="text"], input[type="password"], #email {
+    border: none;
+    margin-top: 30px;
+}
+
+i{
+    border-bottom: 1px solid #ffb600;
+
+}
+i.fa-trash{
+    border: none;
+}
+i#biografia{
+    margin-top: 20px;
+    border: none;
+}
+i.fa-question-circle{
+    border: none;
+    width: 5%;
+}
+textarea{
+    margin-top: 5px;
+    border: 1px solid #ffb600;
+    outline: none;
+    height: 100px;
+    width: 90%;
+}
+i.fa-lock-open{
+    padding: 5px;
+    border: none;
+}
+#1popup{
+    font-family: elephans;
+}
+.labels {
+    background-color: white;
+    color:black;
+    border: 2px solid #ffb600;
+    margin:1.5%;
+    padding: 7px 15px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+.titleBorrar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h4 a{
+    color: black;
+}
+i.fa-trash{
+    font-size: 30px;
+    color: red;
+}
+i.fa-trash:hover{
+    color: red;
+}
+@media screen and (min-width: 768px) {
+    #informacionTotal{
+        width: 60%;
+        justify-content: space-between;
+    }
+    #imgUser{
+        width: auto;
+        margin-top: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    #imgUser img{
+        margin-right: 0;
+        width: 150px;
+        height: 150px;
+    }
+    #imgUser #username{
+        font-size: 28px;
+    }
+    #infUsu{
+        width: 70%;
+        flex-direction: column;
+        align-items: center;
+    }
+    #datosUsu{
+        justify-content: flex-start;
+    }
+
+    #datosUsu #numPreguntas{
+        order: 1;
+    }
+    #datosUsu #nombreApellido{
+        order: 2;
+    }
+    #datosUsu #bio{
+        order: 3;
+        display: block;
+    }
+    #datosUsu #ultConex{
+        order: 4;
+        align-self: flex-end;
+        padding-top: 60px;
+    }
+    .button{
+        padding: 18px;
+        font-size: 2em;
+        font-family: montserrat;
+    }
+    .pregunta{
+        width:60%;
+
+    }
+    .pregunta .fechaPregunta{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-direction: row;
+        width: 100%;
+        grid-column: 3/1;
+    }
+}
+

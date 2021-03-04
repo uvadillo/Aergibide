@@ -1,0 +1,295 @@
+@font-face {
+    font-family: "elephans";
+    src: url("../fonts/Elephans.ttf");
+}
+@font-face {
+    font-family: "montserrat";
+    src: url("../fonts/Montserrat.ttf");
+}
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        font-family: "elephans";
+
+    }
+/*MOVIL FIRST*/
+
+    /*main*/
+
+    main{
+        padding-top: 50px;
+        margin-bottom: 40px;
+    }
+    #titulop{
+        display: none;
+    }
+
+    #imgPcs {
+        width: 35%;
+        margin: 9px;
+    }
+    #color{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    }
+    #color #nombreEmpresa{
+    font-size: 25px;
+    color: #ffb600;
+
+    }
+    #opciones{
+        display: none;
+    }
+    #primero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5%;
+        max-width: 100%;
+        padding-bottom: 3%;
+        border-bottom: solid 0.5px grey;
+    }
+    .button1 {
+        background-color: white;
+        border: 2px solid black;
+        margin-right: 10px;
+        padding: 15px 32px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .button1 p{
+        color: #ffb600;
+
+    }
+    #etiquetas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+        padding-bottom: 5%;
+        border-bottom: solid 0.5px grey;
+    }
+    .eti{
+        flex-basis: 100%;
+        font-weight: bold;
+
+    }
+
+    .labels {
+        background-color: white;
+        color:black;
+        border: 2px solid #ffb600;
+        margin:1.5%;
+        padding: 7px 15px;
+        text-align: center;
+        font-size: 15px;
+        cursor: pointer;
+        width: 30%;
+
+    }
+    .labels a{
+        color:black;
+    }
+    .preguntas{
+    display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows:70% 30%;
+    margin: 5%;
+    max-width: 100%;
+    padding-bottom: 3%;
+    border-bottom: solid 0.5px grey;
+    }
+    .iconos {
+
+        grid-column: 1/2;
+        grid-row:2/3;
+
+    }
+    .iconos button {
+        border: none;
+    }
+    .like{
+    background: none;
+    margin-right:8%;
+    }
+    .info {
+        grid-column: 2/3;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .info h4,h5,p{
+        grid-row:1/2;
+        margin: 2%;
+
+    }
+    .info p{
+        font-size: 16px;
+        font-family: montserrat;
+        word-wrap: break-word;
+    }
+    .info h4 a{
+        color: black;
+    }
+    .fecha{
+        grid-row:2/3;
+        margin-top: auto;
+        font-size: 16px;
+        font-family: montserrat;
+        padding-bottom: 10px;
+    }
+    .info h5{
+        color:#ffb600;
+    }
+    .fechaTag{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-direction: row;
+        width: 100%;
+    }
+    .labels{
+        width: 30%;
+    }
+    .fechaTag .labels{
+        width: 40%;
+        cursor: default;
+    }
+
+    .titleBorrar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .titleBorrar i{
+        cursor: pointer;
+    }
+    i.fa-trash{
+        font-size: 30px;
+    }
+    @media (min-width: 768px) {
+        /*Diseño Escritorio*/
+        main{
+            margin: 0 8%;
+        }
+        .fechaTag .labels{
+            width: 20%;
+        }
+        /*Primer div*/
+        #titulop{
+            display: block;
+            font-size: 65px;
+
+        }
+        .button1 {
+            background-color: #ffb600;
+            border: 2px solid black;
+            margin-left: 2%;
+            border-radius: 6%;
+            font-size: 32px;
+            padding: 0;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .button1 p{
+            color: black;
+            font-size: 24px;
+        }
+        a[href="newquestions.php"]{
+            width: 180px;
+        }
+
+        .btnSignin,.btnSignup{
+            border: none;
+            padding:5px;
+            width: 8vw;
+            font-size: 20px;
+            background-color: black;
+            color: black;
+        }
+        .btnSignin{
+            border-radius: 10px 0 0 10px;
+        }
+        .btnSignup {
+            border-radius: 0 10px 10px 0;
+        }
+        .active{
+            color:  #ffb600;
+            /* border-left: 0.5px solid white; */
+        }
+        .unactive{
+            border: 1px solid black;
+            /* border-right: 0.5px solid white; */
+            background: transparent;
+        }
+
+        #primero{
+            margin:5%;
+            margin-bottom: 8px;
+
+        }
+        #imgPcs,#nombreEmpresa {
+            display: none;
+        }
+
+        #principal{
+            display: grid;
+            grid-template-columns: 20% 80%;
+            margin: auto 5%;
+            font-size:24px;
+        }
+        #etiquetas{
+            grid-column:1/2;
+            border-bottom: 0;
+            overflow: hidden;
+
+        }
+        .sticky {
+            position: fixed;
+            top: 60px;
+            width: 15%;
+            
+        }
+        .labels {
+            background-color: white;
+            color:black;
+            border: 2px solid #ffb600;
+            margin:1.5%;
+            padding: 7px 15px;
+            text-align: center;
+            font-size: 15px;
+            cursor: pointer;
+            width: 47%;
+
+        }
+        .sticky + .principal {
+            padding-top: 60px;
+        }
+        .preguntas{
+            grid-column: 2/3;
+            margin:3%;
+            max-width: 100%;
+        }
+        .fechaTag {
+            
+            width: 100%;
+            flex-direction: row;
+        }
+        .fecha{
+            margin-left: 2%;
+        }
+        .iconos{
+            margin-top: auto;
+        }
+
+    }
+
