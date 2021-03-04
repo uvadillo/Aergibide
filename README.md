@@ -1,6 +1,8 @@
-# Proyecto 2 - Equipo 2
+# AERGIBIDE
 
-Reto realizado por el equipo 2 (Alejandro, Unai, Rosa y Jorge).
+<p align="center">
+  <img src="https://github.com/uvadillo/Aergibide/blob/main/media/shortlogoVectorizado.png" width=30%>
+</p>
 
 ## Enunciado
  La empresa del
@@ -18,3 +20,15 @@ sector aeronáutico Aergibide SL os ha contactado para desarrollar una aplicaci�
 - Votar respuesta favorita.
 
 - Perfil de usuario.
+
+## Herramientas 🛠️
+La interfaz gráfica utilizada:
+* [Visual Studio Code](https://code.visualstudio.com/) 
++ [PhpStorm](https://www.jetbrains.com/es-es/phpstorm/) 
+
+Organizacion:
+* [Slack](https://slack.com/intl/es-es/) 
+
+Servidor Web:
+* LAMP en servidor local
+
